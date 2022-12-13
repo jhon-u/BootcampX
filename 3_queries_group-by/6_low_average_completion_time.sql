@@ -1,4 +1,4 @@
-SELECT students.name as student, AVG(assignment_submissions.duration) AS average_assignment_duration,
+explain SELECT students.name as student, AVG(assignment_submissions.duration) AS average_assignment_duration,
   AVG(assignments.duration) AS average_estimated_duration
 FROM students
 JOIN assignment_submissions ON student_id = students.id
